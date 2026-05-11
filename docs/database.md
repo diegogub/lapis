@@ -880,7 +880,7 @@ schema.create_table("users", {
   {"username", types.varchar},
 
   "PRIMARY KEY (id)"
-})
+}, { if_not_exist = true } )
 ```
 
 ```moon
